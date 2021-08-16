@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Money</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="theFormSection">
+    <form class="theForm">
+      <div class="howMany">
+      <label for="numCoins">How many?</label> 
+      <input type="number" id="numCoins" name="numCoins" min="1" max="10">
+      </div>
+      <div class="whichCoin">
+      <label for="whichCoin">Which coin?</label>
+      <select id="whichCoin" name="whichCoin">
+        <option value="penny">Penny</option>
+        <option value="nickel">Nickel</option>
+        <option value="dime">Dime</option>
+        <option value="quarter">Quarter</option>
+      </select>
+      </div>
+      <input type="submit" value="Make Money!">
+    </form>
+  </section>
+  <section>
+    <div id="penny" class="coin penny">Penny</div>
+    <div id="nickel" class="coin nickel">Nickel</div>
+    <div id="dime" class="coin dime">Dime</div>
+    <div id="quarter" class="coin quarter">Quarter</div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
