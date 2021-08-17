@@ -54,3 +54,13 @@
   align-items: center;
   justify-content: center;
 }
+
+#hiddenCoins {
+  display: none;
+}
+
+#displayedCoins {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -9,10 +9,10 @@
 </head>
 <body>
   <section class="theFormSection">
-    <form class="theForm">
+    <form id="theForm">
       <div class="howMany">
       <label for="numCoins">How many?</label> 
-      <input type="number" id="numCoins" name="numCoins" min="1" max="10">
+      <input type="number" value = 1 id="numCoins" name="numCoins" min="1" max="10">
       </div>
       <div class="whichCoin">
       <label for="whichCoin">Which coin?</label>
@@ -23,15 +23,19 @@
         <option value="quarter">Quarter</option>
       </select>
       </div>
-      <input type="submit" value="Make Money!">
+      <input id="submitMakeMoney" type="submit" value="Make Money!">
     </form>
   </section>
-  <section>
+  <section id="hiddenCoins">
     <div id="penny" class="coin penny">Penny</div>
     <div id="nickel" class="coin nickel">Nickel</div>
     <div id="dime" class="coin dime">Dime</div>
     <div id="quarter" class="coin quarter">Quarter</div>
   </section>
+  <div id="displayedCoins">
+
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
